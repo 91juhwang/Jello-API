@@ -6,15 +6,20 @@ This Rails --API application is something like Trello, providing RESTful APIs fo
 
   * `ruby 2.2 or higher`
   * `rails 5.0 or higher`
-
+  * `rack-cors` for cross origin resource sharing (CORS)
+  * `bcrypt` for authentication
 
 ## Design
 
 #### Models and associations
 
 ![model](https://drive.google.com/uc?id=0Byxeja4jYwq4M01YNERFYTJpVnM)
+* Removed auto-generated `foreign_key: true` in `rails g` and added `add_foreign_key` in the migrations file explicitly for the non-standard naming of creator_id, and assignee_id
 1. User
   ```ruby
+  # bcrypt authentication
+  has_secure_password 
+
   # Nullify turns dependent foreign keys into null if the reference_key gets removed.
   has_many boards, foreign_key: 'creator_id', dependent: nullify 
   has_many lists, foreign_key: 'creator_id', dependent: nullify 
