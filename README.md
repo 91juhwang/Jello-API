@@ -1,6 +1,6 @@
 # Jello Server
 
-This Rails --API application is something like Trello, providing RESTful APIs for client.
+This application is a mock version of Trello API, where a client can use the provided RESTful APIs to generate lists.
 
 ## Requirement
 
@@ -8,8 +8,6 @@ This Rails --API application is something like Trello, providing RESTful APIs fo
   * `rails 5.0 or higher`
   * `rack-cors` for cross origin resource sharing (CORS)
   * `bcrypt` for authentication
-
-## Design
 
 #### Models and associations
 
@@ -54,9 +52,12 @@ They all have basic validation in place such as email uniqueness & presence, tit
  
 ## Authentication
 
+To be updated..
 
 ## Usage
 
 Clone & Bundle and you are ready to use the Jello service!
 
 #### API Endpoints
+
+To be updated...
