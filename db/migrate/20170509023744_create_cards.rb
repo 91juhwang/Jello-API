@@ -10,5 +10,7 @@ class CreateCards < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+    add_foreign_key :cards, :users, column: :creator_id
+    add_foreign_key :cards, :users, column: :assignee_id
   end
 end

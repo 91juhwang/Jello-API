@@ -7,5 +7,6 @@ class CreateBoards < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+    add_foreign_key :boards, :users, column: :creator_id
   end
 end
