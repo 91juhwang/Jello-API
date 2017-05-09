@@ -2,8 +2,8 @@ class CreateCards < ActiveRecord::Migration[5.0]
   def change
     create_table :cards do |t|
       t.references :list, foreign_key: true
-      t.references :creator, foreign_key: true
-      t.references :assignee, foreign_key: true
+      t.references :creator
+      t.references :assignee
       t.string :title
       t.text :description
       t.boolean :archived

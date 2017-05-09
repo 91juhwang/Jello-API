@@ -40,6 +40,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     awesome_print (1.7.0)
+    bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -134,6 +135,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  bcrypt (~> 3.1.7)
   byebug
   dotenv-rails
   listen (~> 3.0.5)
