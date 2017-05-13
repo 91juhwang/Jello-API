@@ -8,6 +8,7 @@ This application is a mock version of Trello API, where a client can use the pro
   * `rails 5.0 or higher`
   * `rack-cors` for cross origin resource sharing (CORS)
   * `bcrypt` for authentication
+  * `active_model_serializers` to turn it as a JSON Objects
 
 
 ## Design
