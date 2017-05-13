@@ -9,6 +9,9 @@ This application is a mock version of Trello API, where a client can use the pro
   * `rack-cors` for cross origin resource sharing (CORS)
   * `bcrypt` for authentication
 
+
+## Design
+
 #### Models and associations
 
 ![model](https://drive.google.com/uc?id=0Byxeja4jYwq4M01YNERFYTJpVnM)
