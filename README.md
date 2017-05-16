@@ -64,4 +64,8 @@ Clone & Bundle and you are ready to use the Jello service!
 
 #### API Endpoints
 
-To be updated...
+##### Users:
+
+  * `GET '/users/:id'`
+
+    - Returns the user information
